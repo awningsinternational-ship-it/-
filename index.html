@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>专业铝合金雨棚·车棚·凉亭供应商</title>
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+<style>
+/* ===== CSS Variables ===== */
+:root {
+  --bg-cream: #F5F3EF;
+  --bg-dark: #1A1A1A;
+  --bg-card: #2D2D2D;
+  --gold: #C9A96E;
+  --gold-light: #D4B87A;
+  --gold-dark: #A88B5A;
+  --text-dark: #1A1A1A;
+  --text-gray: #666666;
+  --text-light: #999999;
+  --text-white: #FFFFFF;
+  --border-gold: rgba(201, 169, 110, 0.3);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-cream);
+  color: var(--text-dark);
+  line-height: 1.7;
+  overflow-x: hidden;
+  padding-bottom: 64px;
+}
+h1, h2, h3, h4 { font-family: 'Noto Serif SC', serif; font-weight: 700; }
+
+/* ===== Navigation ===== */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  padding: 16px 24px;
+  display: flex; justify-content: space-between; align-items: center;
+  transition: all 0.4s ease;
+  background: transparent;
+}
+.nav.scrolled {
+  background: rgba(26, 26, 26, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 12px 24px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+.nav-logo {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 18px; font-weight: 700; color: #fff;
+  letter-spacing: 2px;
+  display: flex; align-items: center; gap: 8px;
+}
+.nav-logo::before {
+  content: ''; width: 24px; height: 2px; background: var(--gold);
+}
+.nav-cta {
+  padding: 8px 20px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 13px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+.nav-cta:hover { background: var(--gold); color: var(--bg-dark); }
+
+/* ===== Hero ===== */
+.hero {
+  position: relative; height: 100vh; min-height: 600px;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: url('https://aka.doubaocdn.com/s/HCyAqT7ag2') center/cover no-repeat;
+  transform: scale(1.05);
+  animation: heroZoom 20s ease-out infinite alternate;
+}
+@keyframes heroZoom {
+  from { transform: scale(1.05); }
+  to { transform: scale(1.12); }
+}
+.hero-overlay {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(135deg, rgba(26,26,26,0.85) 0%, rgba(26,26,26,0.5) 50%, rgba(26,26,26,0.7) 100%);
+}
+.hero-gold-line {
+  position: absolute; top: 50%; left: 0; width: 80px; height: 1px;
+  background: var(--gold); transform: translateY(-50%);
+}
+.hero-content {
+  position: relative; z-index: 2; text-align: center; color: #fff;
+  padding: 0 24px; max-width: 800px;
+}
+.hero-eyebrow {
+  font-size: 12px; letter-spacing: 6px; color: var(--gold);
+  text-transform: uppercase; margin-bottom: 20px;
+  opacity: 0; animation: fadeUp 1s 0.3s forwards;
+}
+.hero-title {
+  font-size: clamp(32px, 6vw, 56px);
+  font-weight: 900; line-height: 1.2; margin-bottom: 20px;
+  opacity: 0; animation: fadeUp 1s 0.5s forwards;
+}
+.hero-title span { color: var(--gold); }
+.hero-subtitle {
+  font-size: clamp(14px, 2vw, 18px);
+  color: rgba(255,255,255,0.8); font-weight: 300;
+  margin-bottom: 40px; letter-spacing: 1px;
+  opacity: 0; animation: fadeUp 1s 0.7s forwards;
+}
+.hero-btns {
+  display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+  opacity: 0; animation: fadeUp 1s 0.9s forwards;
+}
+.btn-primary {
+  padding: 14px 36px; background: var(--gold); color: var(--bg-dark);
+  text-decoration: none; font-size: 14px; font-weight: 600;
+  letter-spacing: 2px; transition: all 0.3s;
+  border: none; cursor: pointer;
+}
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(201,169,110,0.4); }
+.btn-outline {
+  padding: 14px 36px; background: transparent; color: #fff;
+  text-decoration: none; font-size: 14px; font-weight: 500;
+  letter-spacing: 2px; border: 1px solid rgba(255,255,255,0.4);
+  transition: all 0.3s;
+}
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+.hero-scroll {
+  position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+  z-index: 2; color: rgba(255,255,255,0.6); font-size: 11px;
+  letter-spacing: 3px; text-align: center;
+}
+.hero-scroll::after {
+  content: ''; display: block; width: 1px; height: 40px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  margin: 10px auto 0; animation: scrollLine 2s ease-in-out infinite;
+}
+@keyframes scrollLine {
+  0%, 100% { opacity: 0.3; transform: scaleY(0.5); }
+  50% { opacity: 1; transform: scaleY(1); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Stats Bar ===== */
+.stats-bar {
+  background: var(--bg-dark);
+  padding: 50px 24px;
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 20px; text-align: center;
+}
+.stat-item { position: relative; }
+.stat-item:not(:last-child)::after {
+  content: ''; position: absolute; right: 0; top: 20%; height: 60%;
+  width: 1px; background: rgba(201,169,110,0.2);
+}
+.stat-num {
+  font-family: 'Noto Serif SC', serif;
+  font-size: clamp(24px, 4vw, 40px);
+  font-weight: 900; color: var(--gold);
+  line-height: 1; margin-bottom: 8px;
+}
+.stat-label {
+  font-size: 12px; color: rgba(255,255,255,0.6);
+  letter-spacing: 1px;
+}
+
+/* ===== Section Common ===== */
+.section { padding: 80px 24px; max-width: 1200px; margin: 0 auto; }
+.section-dark { background: var(--bg-dark); color: #fff; max-width: 100%; }
+.section-dark .section-inner { max-width: 1200px; margin: 0 auto; }
+.section-header { text-align: center; margin-bottom: 60px; }
+.section-eyebrow {
+  font-size: 12px; letter-spacing: 4px; color: var(--gold);
+  text-transform: uppercase; margin-bottom: 12px;
+}
+.section-title {
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 700; margin-bottom: 16px;
+  position: relative; display: inline-block;
+}
+.section-title::after {
+  content: ''; display: block; width: 50px; height: 2px;
+  background: var(--gold); margin: 16px auto 0;
+}
+.section-desc {
+  font-size: 14px; color: var(--text-gray); max-width: 600px;
+  margin: 0 auto; line-height: 1.8;
+}
+.section-dark .section-desc { color: rgba(255,255,255,0.6); }
+
+/* ===== About ===== */
+.about-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+  align-items: center;
+}
+.about-image {
+  position: relative; overflow: hidden;
+}
+.about-image img {
+  width: 100%; height: 400px; object-fit: cover;
+  display: block;
+}
+.about-image::before {
+  content: ''; position: absolute; top: -15px; left: -15px;
+  width: 80px; height: 80px;
+  border-top: 2px solid var(--gold); border-left: 2px solid var(--gold);
+  z-index: 2;
+}
+.about-image::after {
+  content: ''; position: absolute; bottom: -15px; right: -15px;
+  width: 80px; height: 80px;
+  border-bottom: 2px solid var(--gold); border-right: 2px solid var(--gold);
+  z-index: 2;
+}
+.about-content h3 {
+  font-size: 24px; margin-bottom: 20px; line-height: 1.4;
+}
+.about-content p {
+  font-size: 14px; color: var(--text-gray); line-height: 2;
+  margin-bottom: 20px;
+}
+.about-features {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+  margin-top: 30px;
+}
+.about-feature {
+  display: flex; align-items: flex-start; gap: 10px;
+}
+.about-feature-icon {
+  width: 32px; height: 32px; flex-shrink: 0;
+  border: 1px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+}
+.about-feature-icon svg { width: 16px; height: 16px; stroke: var(--gold); fill: none; stroke-width: 1.5; }
+.about-feature-text h4 { font-size: 13px; margin-bottom: 2px; font-family: 'Noto Sans SC', sans-serif; font-weight: 600; }
+.about-feature-text p { font-size: 11px; color: var(--text-light); margin: 0; line-height: 1.5; }
+
+/* ===== Products ===== */
+.products-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+}
+.product-card {
+  background: #fff; overflow: hidden;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+  position: relative;
+}
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+.product-card:hover .product-img::after { opacity: 1; }
+.product-card:hover .product-img img { transform: scale(1.08); }
+.product-img {
+  position: relative; height: 200px; overflow: hidden;
+}
+.product-img img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.product-img::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(26,26,26,0.6), transparent 50%);
+  opacity: 0; transition: opacity 0.4s;
+}
+.product-tag {
+  position: absolute; top: 12px; left: 12px; z-index: 2;
+  padding: 4px 10px; background: var(--gold);
+  color: var(--bg-dark); font-size: 10px; font-weight: 600;
+  letter-spacing: 1px;
+}
+.product-info { padding: 20px; }
+.product-name {
+  font-size: 16px; font-weight: 700; margin-bottom: 8px;
+  font-family: 'Noto Serif SC', serif;
+}
+.product-desc {
+  font-size: 12px; color: var(--text-gray); line-height: 1.7;
+  margin-bottom: 16px; min-height: 40px;
+}
+.product-price {
+  font-size: 18px; font-weight: 700; color: var(--gold);
+  font-family: 'Noto Serif SC', serif;
+}
+.product-price span { font-size: 11px; color: var(--text-light); font-weight: 400; }
+
+/* ===== Cases ===== */
+.cases-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+}
+.case-item {
+  position: relative; overflow: hidden; height: 320px;
+  cursor: pointer;
+}
+.case-item img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.case-item:hover img { transform: scale(1.08); }
+.case-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(26,26,26,0.9) 0%, transparent 60%);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 30px; color: #fff;
+}
+.case-overlay h4 {
+  font-size: 18px; margin-bottom: 6px;
+  font-family: 'Noto Serif SC', serif;
+}
+.case-overlay p { font-size: 12px; color: rgba(255,255,255,0.7); }
+.case-line {
+  width: 40px; height: 2px; background: var(--gold);
+  margin-bottom: 12px; transition: width 0.4s;
+}
+.case-item:hover .case-line { width: 80px; }
+
+/* ===== Factory ===== */
+.factory-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+  align-items: center;
+}
+.factory-image { position: relative; }
+.factory-image img {
+  width: 100%; height: 400px; object-fit: cover; display: block;
+}
+.factory-image-badge {
+  position: absolute; bottom: -20px; right: -20px;
+  width: 120px; height: 120px; background: var(--gold);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  color: var(--bg-dark); text-align: center;
+}
+.factory-image-badge .num {
+  font-family: 'Noto Serif SC', serif; font-size: 32px; font-weight: 900; line-height: 1;
+}
+.factory-image-badge .label { font-size: 11px; margin-top: 4px; letter-spacing: 1px; }
+.factory-content h3 { font-size: 24px; margin-bottom: 20px; }
+.factory-content p { font-size: 14px; color: var(--text-gray); line-height: 2; margin-bottom: 24px; }
+.factory-list { list-style: none; }
+.factory-list li {
+  padding: 12px 0; border-bottom: 1px solid rgba(201,169,110,0.15);
+  display: flex; align-items: center; gap: 12px;
+  font-size: 14px;
+}
+.factory-list li::before {
+  content: ''; width: 6px; height: 6px; background: var(--gold);
+  flex-shrink: 0; transform: rotate(45deg);
+}
+
+/* ===== Process ===== */
+.process-timeline {
+  display: grid; grid-template-columns: repeat(6, 1fr);
+  gap: 0; position: relative;
+}
+.process-timeline::before {
+  content: ''; position: absolute; top: 24px; left: 8%; right: 8%;
+  height: 1px; background: rgba(201,169,110,0.3);
+}
+.process-step {
+  text-align: center; padding: 0 10px; position: relative;
+}
+.process-num {
+  width: 48px; height: 48px; margin: 0 auto 20px;
+  border: 1px solid var(--gold); background: var(--bg-cream);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Noto Serif SC', serif; font-size: 18px; font-weight: 700;
+  color: var(--gold); position: relative; z-index: 2;
+  transition: all 0.3s;
+}
+.process-step:hover .process-num {
+  background: var(--gold); color: var(--bg-dark);
+}
+.process-step h4 {
+  font-size: 14px; margin-bottom: 6px;
+  font-family: 'Noto Sans SC', sans-serif; font-weight: 600;
+}
+.process-step p { font-size: 11px; color: var(--text-gray); line-height: 1.6; }
+
+/* ===== Advantages ===== */
+.adv-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;
+}
+.adv-card {
+  padding: 40px 30px; background: var(--bg-card);
+  border: 1px solid rgba(201,169,110,0.1);
+  transition: all 0.4s;
+  position: relative; overflow: hidden;
+}
+.adv-card::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 2px;
+  background: var(--gold); transform: scaleX(0); transform-origin: left;
+  transition: transform 0.4s;
+}
+.adv-card:hover::before { transform: scaleX(1); }
+.adv-card:hover { transform: translateY(-5px); border-color: rgba(201,169,110,0.3); }
+.adv-icon {
+  width: 50px; height: 50px; margin-bottom: 20px;
+  border: 1px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+}
+.adv-icon svg { width: 24px; height: 24px; stroke: var(--gold); fill: none; stroke-width: 1.5; }
+.adv-card h4 {
+  font-size: 16px; margin-bottom: 10px; color: #fff;
+  font-family: 'Noto Serif SC', serif;
+}
+.adv-card p { font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.8; }
+
+/* ===== CTA ===== */
+.cta-section {
+  background: var(--bg-dark);
+  padding: 80px 24px;
+  text-align: center;
+  position: relative; overflow: hidden;
+}
+.cta-section::before {
+  content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(201,169,110,0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+.cta-section h2 {
+  font-size: clamp(24px, 4vw, 36px); color: #fff;
+  margin-bottom: 16px; position: relative;
+}
+.cta-section p {
+  font-size: 14px; color: rgba(255,255,255,0.6);
+  margin-bottom: 40px; position: relative;
+}
+.cta-section .btn-primary { position: relative; }
+
+/* ===== Footer ===== */
+.footer {
+  background: #111; padding: 50px 24px 30px;
+  color: rgba(255,255,255,0.6);
+}
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.footer-grid {
+  display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+  margin-bottom: 40px;
+}
+.footer-brand h3 {
+  font-family: 'Noto Serif SC', serif; font-size: 20px;
+  color: #fff; margin-bottom: 12px;
+}
+.footer-brand p { font-size: 13px; line-height: 1.8; }
+.footer-col h4 {
+  font-size: 14px; color: #fff; margin-bottom: 16px;
+  font-family: 'Noto Sans SC', sans-serif; font-weight: 600;
+}
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 8px; font-size: 13px; }
+.footer-col a { color: rgba(255,255,255,0.6); text-decoration: none; }
+.footer-bottom {
+  padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 12px; text-align: center;
+}
+
+/* ===== Bottom Bar ===== */
+.bottom-bar {
+  position: fixed; bottom: 0; left: 0; right: 0; height: 64px;
+  background: var(--bg-dark); z-index: 999;
+  display: flex;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+}
+.bottom-btn {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  gap: 8px; color: #fff; text-decoration: none;
+  font-size: 14px; font-weight: 500;
+  transition: background 0.3s;
+}
+.bottom-btn.call { border-right: 1px solid rgba(255,255,255,0.1); }
+.bottom-btn.call:hover { background: rgba(255,255,255,0.05); }
+.bottom-btn.quote { background: var(--gold); color: var(--bg-dark); font-weight: 700; }
+.bottom-btn.quote:hover { background: var(--gold-light); }
+.bottom-btn svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.5; }
+
+/* ===== Reveal Animation ===== */
+.reveal {
+  opacity: 0; transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .stats-bar { grid-template-columns: repeat(2, 1fr); gap: 30px 20px; }
+  .stat-item:nth-child(2)::after { display: none; }
+  .about-grid, .factory-grid { grid-template-columns: 1fr; gap: 40px; }
+  .about-image img, .factory-image img { height: 280px; }
+  .products-grid { grid-template-columns: repeat(2, 1fr); }
+  .cases-grid { grid-template-columns: 1fr; }
+  .case-item { height: 240px; }
+  .process-timeline { grid-template-columns: repeat(3, 1fr); gap: 30px 0; }
+  .process-timeline::before { display: none; }
+  .adv-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+  .section { padding: 60px 20px; }
+  .factory-image-badge { width: 90px; height: 90px; bottom: -15px; right: -15px; }
+  .factory-image-badge .num { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Navigation ===== -->
+<nav class="nav" id="nav">
+  <div class="nav-logo">佛山万家铝业雨棚</div>
+  <a href="#contact" class="nav-cta">获取报价</a>
+</nav>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-gold-line"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">ALUMINUM AWNING · PERGOLA · CARPORT</div>
+    <h1 class="hero-title">专业铝合金<span>雨棚·凉亭·车棚</span><br>一站式供应商</h1>
+    <p class="hero-subtitle">专业铝合金雨棚·凉亭·车棚一站式供应商</p>
+    <div class="hero-btns">
+      <a href="#products" class="btn-primary">查看产品</a>
+      <a href="#contact" class="btn-outline">立即报价</a>
+    </div>
+  </div>
+  <div class="hero-scroll">SCROLL</div>
+</section>
+
+<!-- ===== Stats ===== -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-num">500+</div>
+    <div class="stat-label">合作装修公司</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">10万+</div>
+    <div class="stat-label">年安装面积 ㎡</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">5年</div>
+    <div class="stat-label">产品质保</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">48h</div>
+    <div class="stat-label">极速出报价</div>
+  </div>
+</div>
+
+<!-- ===== About ===== -->
+<section class="section">
+  <div class="section-header reveal">
+    <div class="section-eyebrow">ABOUT US</div>
+    <h2 class="section-title">关于我们</h2>
+    <p class="section-desc">专注铝合金户外遮阳产品，为装修公司提供高品质、高性价比的一站式供货服务</p>
+  </div>
+  <div class="about-grid">
+    <div class="about-image reveal">
+      <img src="https://aka.doubaocdn.com/s/2vGnp8lCmu" alt="铝合金雨棚产品">
+    </div>
+    <div class="about-content reveal">
+      <h3>十年专注 · 品质为王</h3>
+      <p>佛山万家铝业雨棚工厂成立于2018年，是一家专业从事铝合金雨棚、耐力板雨棚、铝合金凉亭、车库雨棚的研发、生产与销售的综合型企业。我们始终坚持"品质第一、服务至上"的经营理念，为全国500+装修公司提供稳定可靠的产品供应。</p>
+      <p>常规产品常年备货，3-7天发货不拖延；专业安装团队全国上门，整体质保5年，售后24小时响应。选万家，就是选省心。</p>
+      <div class="about-features">
+        <div class="about-feature">
+          <div class="about-feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="about-feature-text">
+            <h4>国标铝材</h4>
+            <p>全部采用国标铝合金型材</p>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="about-feature-text">
+            <h4>五年质保</h4>
+            <p>整体质保5年，售后无忧</p>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div class="about-feature-text">
+            <h4>极速报价</h4>
+            <p>尺寸发来48小时内出报价</p>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="about-feature-text">
+            <h4>专业团队</h4>
+            <p>自有安装团队，技术娴熟</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Products ===== -->
+<section class="section" id="products" style="background: #fff; max-width: 100%;">
+  <div class="section" style="padding-top: 0; padding-bottom: 0;">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">PRODUCTS</div>
+      <h2 class="section-title">产品中心</h2>
+      <p class="section-desc">四大核心产品线，满足不同场景需求，支持定制尺寸与颜色</p>
+    </div>
+    <div class="products-grid">
+      <div class="product-card reveal">
+        <div class="product-img">
+          <span class="product-tag">主推</span>
+          <img src="https://aka.doubaocdn.com/s/2vGnp8lCmu" alt="铝合金长城板雨棚">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">铝合金长城板雨棚</h3>
+          <p class="product-desc">2.0mm长城板·国标铝合金·抗12级台风</p>
+          <div class="product-price">198-268元/㎡ <span>起</span></div>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-img">
+          <span class="product-tag">热销</span>
+          <img src="https://aka.doubaocdn.com/s/x3QlCW8UA9" alt="耐力板雨棚">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">耐力板雨棚</h3>
+          <p class="product-desc">2.0mm耐力板·高透光·抗冲击·防紫外线</p>
+          <div class="product-price">148-228元/㎡ <span>起</span></div>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-img">
+          <span class="product-tag">推荐</span>
+          <img src="https://aka.doubaocdn.com/s/Fq0ZTUETYG" alt="铝合金车棚">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">铝合金车棚</h3>
+          <p class="product-desc">耐力板/长城板可选·单双车位·抗风雪</p>
+          <div class="product-price">158-288元/㎡ <span>起</span></div>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-img">
+          <span class="product-tag">高端</span>
+          <img src="https://aka.doubaocdn.com/s/VHj62wLRNI" alt="铝合金凉亭">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">铝合金凉亭</h3>
+          <p class="product-desc">全铝结构·不生锈·定制尺寸·多种顶型</p>
+          <div class="product-price">380-680元/㎡ <span>起</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Cases ===== -->
+<section class="section">
+  <div class="section-header reveal">
+    <div class="section-eyebrow">CASES</div>
+    <h2 class="section-title">工程案例</h2>
+    <p class="section-desc">真实项目实拍，品质看得见，全国服务超千个项目</p>
+  </div>
+  <div class="cases-grid">
+    <div class="case-item reveal">
+      <img src="https://aka.doubaocdn.com/s/Ly25V8cHFY" alt="别墅露台雨棚">
+      <div class="case-overlay">
+        <div class="case-line"></div>
+        <h4>浙江杭州别墅露台雨棚</h4>
+        <p>杭州 · 耐力板雨棚 · 28㎡ · 2025年完工</p>
+      </div>
+    </div>
+    <div class="case-item reveal">
+      <img src="https://aka.doubaocdn.com/s/2vpdIxCNHr" alt="别墅铝合金凉亭">
+      <div class="case-overlay">
+        <div class="case-line"></div>
+        <h4>贵州贵阳别墅铝合金凉亭</h4>
+        <p>贵阳 · 全铝凉亭 · 18㎡ · 2024年完工</p>
+      </div>
+    </div>
+    <div class="case-item reveal">
+      <img src="https://aka.doubaocdn.com/s/8UPbW3kVJH" alt="小区车库雨棚">
+      <div class="case-overlay">
+        <div class="case-line"></div>
+        <h4>重庆小区车库雨棚</h4>
+        <p>重庆 · 长城板雨棚 · 36㎡ · 2024年完工</p>
+      </div>
+    </div>
+    <div class="case-item reveal">
+      <img src="https://aka.doubaocdn.com/s/pQyclVRhhd" alt="商铺门头雨棚">
+      <div class="case-overlay">
+        <div class="case-line"></div>
+        <h4>成都商铺门头雨棚</h4>
+        <p>成都 · 耐力板雨棚 · 22㎡ · 2025年完工</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Factory ===== -->
+<section class="section" style="background: #fff; max-width: 100%;">
+  <div class="section" style="padding-top: 0; padding-bottom: 0;">
+    <div class="factory-grid">
+      <div class="factory-image reveal">
+        <img src="https://aka.doubaocdn.com/s/1oIDQekPbs" alt="生产车间">
+        <div class="factory-image-badge">
+          <div class="num">8000</div>
+          <div class="label">㎡ 生产基地</div>
+        </div>
+      </div>
+      <div class="factory-content reveal">
+        <div class="section-eyebrow">FACTORY</div>
+        <h3>自有工厂 · 货源稳定</h3>
+        <p>我们拥有8000平方米现代化生产基地，配备先进的铝合金型材加工设备和自动化生产线。从原材料采购到成品出库，每一道工序都经过严格质检，确保产品品质稳定可靠。</p>
+        <ul class="factory-list">
+          <li>常年备货，常规产品3-7天发货，不拖延工期</li>
+          <li>支持定制尺寸、颜色、款式，满足个性化需求</li>
+          <li>全链条品控，从原料到成品层层把关</li>
+          <li>专业安装团队，全国上门安装服务</li>
+          <li>可开增值税专用发票，合作正规有保障</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Process ===== -->
+<section class="section">
+  <div class="section-header reveal">
+    <div class="section-eyebrow">PROCESS</div>
+    <h2 class="section-title">合作流程</h2>
+    <p class="section-desc">六步搞定，省心省力，全程专人对接</p>
+  </div>
+  <div class="process-timeline">
+    <div class="process-step reveal">
+      <div class="process-num">01</div>
+      <h4>咨询报价</h4>
+      <p>发送尺寸/图纸，半小时出详细报价</p>
+    </div>
+    <div class="process-step reveal">
+      <div class="process-num">02</div>
+      <h4>上门测量</h4>
+      <p>本地免费上门，外地指导测量</p>
+    </div>
+    <div class="process-step reveal">
+      <div class="process-num">03</div>
+      <h4>确认方案</h4>
+      <p>确认规格颜色交期，签订协议</p>
+    </div>
+    <div class="process-step reveal">
+      <div class="process-num">04</div>
+      <h4>生产备货</h4>
+      <p>自有工厂生产，3-7天发货</p>
+    </div>
+    <div class="process-step reveal">
+      <div class="process-num">05</div>
+      <h4>上门安装</h4>
+      <p>专业团队施工，1-3天完成</p>
+    </div>
+    <div class="process-step reveal">
+      <div class="process-num">06</div>
+      <h4>售后质保</h4>
+      <p>整体质保5年，24小时响应</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Advantages ===== -->
+<section class="section section-dark">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">ADVANTAGES</div>
+      <h2 class="section-title">为什么选择我们</h2>
+      <p class="section-desc">六大核心优势，让您合作无忧</p>
+    </div>
+    <div class="adv-grid">
+      <div class="adv-card reveal">
+        <div class="adv-icon">
+          <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h4>报价极速</h4>
+        <p>尺寸发来半小时出报价，不耽误您谈单，抓住每一个商机</p>
+      </div>
+      <div class="adv-card reveal">
+        <div class="adv-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h4>厂家直供</h4>
+        <p>自有工厂无中间商，渠道价让利合作伙伴，利润空间更大</p>
+      </div>
+      <div class="adv-card reveal">
+        <div class="adv-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h4>品质保障</h4>
+        <p>国标铝合金型材，耐候性强，不生锈不变形，质保5年</p>
+      </div>
+      <div class="adv-card reveal">
+        <div class="adv-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <h4>货源稳定</h4>
+        <p>常年备货，常规产品3-7天发货，大单急单也能保障交期</p>
+      </div>
+      <div class="adv-card reveal">
+        <div class="adv-icon">
+          <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h4>售后无忧</h4>
+        <p>安装问题24小时响应，漏水免费返修，让您无后顾之忧</p>
+      </div>
+      <div class="adv-card reveal">
+        <div class="adv-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h4>合作灵活</h4>
+        <p>一件也发，支持代发，可开增值税专票，合作方式灵活</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-section" id="contact">
+  <h2>有项目？发尺寸，立即报价</h2>
+  <p>专业团队一对一服务，半小时出报价，厂家直供价，让您利润最大化</p>
+  <a href="tel:19298160887" class="btn-primary">电话咨询报价</a>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>广州茵栀曼电子商务有限公司</h3>
+        <p>专业铝合金雨棚、耐力板雨棚、铝合金凉亭、车库雨棚供应商。厂家直供装修公司，全国发货安装，品质保障5年。</p>
+      </div>
+      <div class="footer-col">
+        <h4>产品中心</h4>
+        <ul>
+          <li><a href="#products">铝合金长城板雨棚</a></li>
+          <li><a href="#products">耐力板雨棚</a></li>
+          <li><a href="#products">铝合金凉亭</a></li>
+          <li><a href="#products">车库雨棚</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>联系我们</h4>
+        <ul>
+          <li>电话：19298160887</li>
+          <li>微信：19298160887</li>
+          <li>地址：广东省佛山市南海区狮山镇颜峰综合开发区12-5号</li>
+          <li>营业时间：周一至周日 8:00-21:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 佛山万家铝业雨棚 版权所有 | 专业铝合金雨棚供应商
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Bottom Bar ===== -->
+<div class="bottom-bar">
+  <a href="tel:19298160887" class="bottom-btn call">
+    <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    电话咨询
+  </a>
+  <a href="#" class="bottom-btn quote" onclick="copyWx()">
+    <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    微信报价
+  </a>
+</div>
+
+<script>
+// Nav scroll effect
+var nav = document.getElementById('nav');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 50) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+});
+
+// Reveal on scroll
+var reveals = document.querySelectorAll('.reveal');
+function checkReveal() {
+  var windowHeight = window.innerHeight;
+  reveals.forEach(function(el) {
+    var top = el.getBoundingClientRect().top;
+    if (top < windowHeight - 100) {
+      el.classList.add('active');
+    }
+  });
+}
+window.addEventListener('scroll', checkReveal);
+window.addEventListener('load', checkReveal);
+
+// Copy WeChat
+function copyWx() {
+  var wx = '19298160887';
+  var input = document.createElement('textarea');
+  input.value = wx;
+  document.body.appendChild(input);
+  input.select();
+  try {
+    document.execCommand('copy');
+    alert('微信号已复制：' + wx + '\n请打开微信粘贴添加好友');
+  } catch(e) {
+    alert('请手动复制微信号：' + wx);
+  }
+  document.body.removeChild(input);
+}
+</script>
+
+</body>
+</html>
